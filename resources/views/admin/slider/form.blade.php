@@ -13,6 +13,36 @@
             @enderror
         </div>
     </div>
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label for="link">link</label>
+            {!! Form::text('link',$data['row']->link??null,[
+                'class'=> $errors->has('link')?'form-control is-invalid':'form-control',
+                    'placeholder'=>'Enter Link',
+               ]) !!}
+            @error('link')
+            <span class="error invalid-feedback">
+                   {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label for="button_title">Button Title</label>
+            {!! Form::text('button_title',$data['row']->button_title??null,[
+                'class'=> $errors->has('button_title')?'form-control is-invalid':'form-control',
+                    'placeholder'=>'Enter Button Title',
+               ]) !!}
+            @error('button_title')
+            <span class="error invalid-feedback">
+                   {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div>
+
 
     <div class="col-sm-6">
         <div class="form-group">

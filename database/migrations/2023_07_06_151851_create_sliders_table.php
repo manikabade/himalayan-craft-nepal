@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('image');
+            $table->string('link');
+            $table->string('button_title');
             $table->boolean('status')->default(0);
             $table->timestamps();
         });
