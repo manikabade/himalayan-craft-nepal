@@ -24,6 +24,8 @@ class UpdateSliderValidation extends FormRequest
         return [
             'title'                        => ['required','string'],
             'main_photo'                   => ['required'],
+            'link'                         => ['required','string'],
+            'button_title'                 => ['required','string'],
             'status'                       => ['nullable', 'boolean'],
         ];
     }

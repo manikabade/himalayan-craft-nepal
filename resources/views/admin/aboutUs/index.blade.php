@@ -55,6 +55,7 @@
                                             <td>{{$aboutUs->id}}</td>
                                             <td>{{$aboutUs->title}}</td>
                                             <td>{{$aboutUs->description}}</td>
+
                                             <td>
 
                                                 <img height="100px" width="100px" src="{{asset('images/aboutUs/'.$aboutUs->image)}}">

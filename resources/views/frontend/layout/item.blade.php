@@ -13,7 +13,8 @@
             @forelse($data['_items'] as $item)
                 <div class="col-md-4 col-sm-6">
                     <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
-                        <img src="{{asset('images/item')}}/{{$item->image}}" class="img-responsive" alt="" height="200px" width="500px">
+                        <a href="{{ route('item.detail', $item->id) }}">
+                        <img src="{{asset('images/item/'.$item->image)}}" class="img-responsive" alt="" height="200px" width="500px">
 
                         <div class="team-info">
                             <h3>{{$item->item_name}}</h3><br>
@@ -28,7 +29,9 @@
                                 <li><a href="#" class="fa fa-envelope-o"></a></li>
                             </ul> --}}
                         </div>
+                        </a>
                     </div>
+
                 </div>
 
                 @empty

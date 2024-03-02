@@ -31,6 +31,7 @@ use Illuminate\Support\Facades\Route;
     });
 Route::get('/',[\App\Http\Controllers\HomeController::class,'index']) ->name('index');
 Route::get('news/{id}',[\App\Http\Controllers\HomeController::class,'newsDetail']) ->name('news.detail');
+Route::get('item/{id}',[\App\Http\Controllers\HomeController::class,'itemDetail']) ->name('item.detail');
 Route::post('order',[\App\Http\Controllers\HomeController::class,'orderForm']) ->name('order.store');
 Route::post('feedback',[\App\Http\Controllers\HomeController::class,'feedbackForm']) ->name('feedback.store');
 

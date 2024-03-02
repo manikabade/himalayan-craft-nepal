@@ -13,5 +13,7 @@ class Slider extends BaseModel
         'title',
         'image',
         'status',
+        'link',
+        'button_title',
     ];
 }

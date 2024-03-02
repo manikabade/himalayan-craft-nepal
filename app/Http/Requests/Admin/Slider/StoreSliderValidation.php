@@ -23,7 +23,9 @@ class StoreSliderValidation extends FormRequest
     {
         return [
             'title'                        => ['required','string'],
-            'main_photo'                   => ['required'],
+            'main_photo'                   => ['nullable'],
+            'link'                         => ['required','string'],
+            'button_title'                 => ['required','string'],
             'status'                       => ['nullable', 'boolean'],
         ];
     }

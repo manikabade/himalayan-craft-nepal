@@ -44,6 +44,8 @@
                                         <th>ID</th>
                                         <th>Title</th>
                                         <th>Image</th>
+                                        <th>Link</th>
+                                        <th>Button Title</th>
                                         <th>Status</th>
                                         <th>Action</th>
                                     </tr>
@@ -54,6 +56,8 @@
                                         <tr>
                                             <td>{{$slider->id}}</td>
                                             <td>{{$slider->title}}</td>
+                                            <td>{{$slider->link}}</td>
+                                            <td>{{$slider->button_title}}</td>
                                             <td>
 
                                                 <img height="100px" width="100px" src="{{asset('images/slider/'.$slider->image)}}">

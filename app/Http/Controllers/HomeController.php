@@ -72,7 +72,11 @@ class HomeController extends Controller
             return back()->withInput($data);
         }
     }
-
+public function itemDetail($id)
+{
+ $item= Item::find($id);
+ return view('frontend.item_detail',compact('item'));
+}
 
 }
 
